@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dup duplicated defs 1`] = `
+Object {
+  "definitions": Object {
+    "a.b.StaticRoute": Object {
+      "properties": Object {
+        "number": Object {
+          "format": "int32",
+          "type": "integer",
+        },
+      },
+      "type": "object",
+    },
+    "a.b.c.d.CreateRouteRequest": Object {
+      "properties": Object {
+        "static_route": Object {
+          "$ref": "#/definitions/a.b.c.d.StaticRoute",
+        },
+      },
+      "type": "object",
+    },
+    "a.b.c.d.StaticRoute": Object {
+      "properties": Object {
+        "name": Object {
+          "type": "string",
+        },
+      },
+      "type": "object",
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "common",
+    "version": "1",
+  },
+  "paths": Object {},
+  "swagger": "2.0",
+}
+`;
